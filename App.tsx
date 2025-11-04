@@ -3,7 +3,6 @@ import { GoogleGenAI } from "@google/genai";
 import { AppState, type Pokemon } from './types';
 import { POKEMON_CSV_DATA } from './constants';
 import { generateCostumeImage } from './services/geminiService';
-import Header from './components/Header';
 import WebcamCapture from './components/WebcamCapture';
 import PokemonSelector from './components/PokemonSelector';
 import ResultDisplay from './components/ResultDisplay';
@@ -170,9 +169,8 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-slate-900 min-h-screen font-sans flex items-center justify-center p-4">
-      <main className="w-full max-w-3xl bg-red-700 rounded-xl border-8 border-black shadow-2xl">
-        <Header />
-        <div className="p-4 sm:p-8 bg-gray-800 rounded-b-lg">
+      <main className="w-full max-w-3xl bg-gray-800 rounded-xl border-8 border-black shadow-2xl">
+        <div className="p-4 sm:p-8">
           <div className="bg-black/20 p-4 sm:p-6 rounded-md min-h-[400px] flex items-center justify-center">
             {renderContent()}
           </div>
