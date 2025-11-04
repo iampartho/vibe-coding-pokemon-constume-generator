@@ -1,0 +1,7 @@
+{
+  "name": "PokéCostume AI",
+  "description": "Take a photo with your webcam, select a Gen-1 Pokémon, and let AI generate an image of you in a cheap, homemade costume of that Pokémon.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
